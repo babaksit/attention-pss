@@ -168,6 +168,7 @@ def train(model, training_data, validation_data, optimizer, device, opt):
 
         if valid_accu >= max(valid_accus):
             save_model(model, opt.result_dir)
+            save_full_model(model,opt,e,opt.result_dir)
             print('[Info] The checkpoint file has been updated.')
 
         if log_train_file and log_valid_file:
