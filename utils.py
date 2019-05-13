@@ -82,7 +82,7 @@ def save_history(history, save_dir):
     save_path = os.path.join(save_dir, 'history.npy')
     np.save(save_path, history)
 
-def save_full_model(model,opt,epoch_i,save_dir)
+def save_full_model(model,opt,epoch_i,save_dir):
     save_path = os.path.join(save_dir, 'full_model.pt')
     model_state_dict = model.state_dict()
     checkpoint = {
