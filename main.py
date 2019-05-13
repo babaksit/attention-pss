@@ -16,7 +16,7 @@ import transformer.Constants as Constants
 from dataset import TranslationDataset, paired_collate_fn
 from transformer.Models import Transformer
 from transformer.Optim import ScheduledOptim
-from utils import args2json, save_model, save_history, show_progress
+from utils import args2json, save_model, save_full_model, save_history, show_progress
 
 
 def cal_performance(pred, gold, smoothing=False):
