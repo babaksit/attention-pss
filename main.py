@@ -236,7 +236,7 @@ def main():
             'The src/tgt word2idx table are different but asked to share word embedding.'
 
     device = torch.device('cuda' if opt.cuda else 'cpu')
-    torch.cuda.set_device(1)
+    torch.cuda.set_device(0)
     transformer = Transformer(
         opt.src_vocab_size,
         opt.tgt_vocab_size,
